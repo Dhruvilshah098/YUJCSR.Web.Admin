@@ -1,0 +1,218 @@
+﻿@model List<YUJCSR.Web.Project.Models.ProjectModel>
+
+@{
+	Layout = "_CRM-Layout";
+}
+
+<div class="container-fluid">
+	<section>
+		@* 	<div class="text-right">
+		<a href="/project/Create" class="btn btn-primary btn-sm">Create Project</a>
+		</div> *@
+
+		<div class="list-data mt-3">
+			<!-- DataTales Example -->
+			<div class="card shadow mb-4">
+				<div class="card-header d-flex justify-content-between align-items-center">
+					<span class="d-flex">
+						<i class="fas fa-project-diagram mr-2"></i>
+						<h6 class="m-0 font-weight-bold text-primary">Users</h6>
+					</span>
+					<span class="float-right">
+						<a href="/project/Create" class="btn btn-primary btn-sm">Create</a>
+					</span>
+				</div>
+				<div class="card-body">
+					<div class="table-responsive">
+						<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead><tr><th data-sortable="true" style="width: 18.240343347639485%;"><a href="#" class="datatable-sorter">User</a></th><th data-sortable="true" style="width: 21.99570815450644%;"><a href="#" class="datatable-sorter">Email</a></th><th data-sortable="true" style="width: 12.446351931330472%;"><a href="#" class="datatable-sorter">Role</a></th><th data-sortable="true" style="width: 25.643776824034337%;"><a href="#" class="datatable-sorter">Groups</a></th><th data-sortable="true" style="width: 11.695278969957082%;"><a href="#" class="datatable-sorter">Joined Date</a></th><th data-sortable="true" style="width: 9.97854077253219%;"><a href="#" class="datatable-sorter">Actions</a></th></tr></thead>
+                            <tbody>
+                                <tr data-index="0">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2"><img class="avatar-img img-fluid" src="assets/img/illustrations/profiles/profile-1.png"></div>
+                                            Tiger Nixon
+                                        </div>
+                                    </td>
+                                    <td>tiger@email.com</td>
+                                    <td>Administrator</td>
+                                    <td>
+                                        <span class="badge bg-green-soft text-green">Sales</span>
+                                        <span class="badge bg-blue-soft text-blue">Developers</span>
+                                        <span class="badge bg-red-soft text-red">Marketing</span>
+                                        <span class="badge bg-purple-soft text-purple">Managers</span>
+                                        <span class="badge bg-yellow-soft text-yellow">Customer</span>
+                                    </td>
+                                    <td>20 Jun 2021</td>
+                                    <td>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></a>
+                                    </td>
+                                </tr>
+                                <tr data-index="1">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2"><img class="avatar-img img-fluid" src="./img/undraw_profile_1.svg"></div>
+                                            Garrett Winters
+                                        </div>
+                                    </td>
+                                    <td>gwinterse@email.com</td>
+                                    <td>Administrator</td>
+                                    <td>
+                                        <span class="badge bg-green-soft text-green">Sales</span>
+                                        <span class="badge bg-blue-soft text-blue">Developers</span>
+                                        <span class="badge bg-red-soft text-red">Marketing</span>
+                                        <span class="badge bg-purple-soft text-purple">Managers</span>
+                                        <span class="badge bg-yellow-soft text-yellow">Customer</span>
+                                    </td>
+                                    <td>20 Jun 2021</td>
+                                    <td>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></a>
+                                    </td>
+                                </tr>
+                                <tr data-index="2">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2"><img class="avatar-img img-fluid" src="assets/img/illustrations/profiles/profile-3.png"></div>
+                                            Ashton Cox
+                                        </div>
+                                    </td>
+                                    <td>ashtonc@email.com</td>
+                                    <td>Registered</td>
+                                    <td>
+                                        <span class="badge bg-green-soft text-green">Sales</span>
+                                        <span class="badge bg-red-soft text-red">Marketing</span>
+                                    </td>
+                                    <td>20 Jun 2021</td>
+                                    <td>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></a>
+                                    </td>
+                                </tr>
+                                <tr data-index="3">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2"><img class="avatar-img img-fluid" src="assets/img/illustrations/profiles/profile-4.png"></div>
+                                            Cedric Kelly
+                                        </div>
+                                    </td>
+                                    <td>cedrickel@email.com</td>
+                                    <td>Registered</td>
+                                    <td>
+                                        <span class="badge bg-green-soft text-green">Sales</span>
+                                        <span class="badge bg-purple-soft text-purple">Managers</span>
+                                    </td>
+                                    <td>20 Jun 2021</td>
+                                    <td>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></a>
+                                    </td>
+                                </tr>
+                                <tr data-index="4">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2"><img class="avatar-img img-fluid" src="assets/img/illustrations/profiles/profile-5.png"></div>
+                                            Airi Satou
+                                        </div>
+                                    </td>
+                                    <td>asatou@email.com</td>
+                                    <td>Registered</td>
+                                    <td><span class="badge bg-yellow-soft text-yellow">Customer</span></td>
+                                    <td>20 Jun 2021</td>
+                                    <td>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></a>
+                                    </td>
+                                </tr>
+                                <tr data-index="5">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2"><img class="avatar-img img-fluid" src="assets/img/illustrations/profiles/profile-6.png"></div>
+                                            Brielle Williamson
+                                        </div>
+                                    </td>
+                                    <td>bwilliamson@email.com</td>
+                                    <td>Registered</td>
+                                    <td><span class="badge bg-yellow-soft text-yellow">Customer</span></td>
+                                    <td>20 Jun 2021</td>
+                                    <td>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></a>
+                                    </td>
+                                </tr>
+                                <tr data-index="6">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2"><img class="avatar-img img-fluid" src="assets/img/illustrations/profiles/profile-1.png"></div>
+                                            Herrod Chandler
+                                        </div>
+                                    </td>
+                                    <td>harrodc@email.com</td>
+                                    <td>Registered</td>
+                                    <td><span class="badge bg-green-soft text-green">Sales</span></td>
+                                    <td>20 Jun 2021</td>
+                                    <td>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></a>
+                                    </td>
+                                </tr>
+                                <tr data-index="7">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2"><img class="avatar-img img-fluid" src="assets/img/illustrations/profiles/profile-2.png"></div>
+                                            Rhona Davidson
+                                        </div>
+                                    </td>
+                                    <td>rhonadavidson@email.com</td>
+                                    <td>Registered</td>
+                                    <td>
+                                        <span class="badge bg-green-soft text-green">Sales</span>
+                                        <span class="badge bg-purple-soft text-purple">Managers</span>
+                                    </td>
+                                    <td>20 Jun 2021</td>
+                                    <td>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></a>
+                                    </td>
+                                </tr>
+                                <tr data-index="8">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2"><img class="avatar-img img-fluid" src="assets/img/illustrations/profiles/profile-3.png"></div>
+                                            Colleen Hurst
+                                        </div>
+                                    </td>
+                                    <td>churst@email.com</td>
+                                    <td>Registered</td>
+                                    <td><span class="badge bg-blue-soft text-blue">Developers</span></td>
+                                    <td>20 Jun 2021</td>
+                                    <td>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></a>
+                                    </td>
+                                </tr>
+                                <tr data-index="9">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2"><img class="avatar-img img-fluid" src="assets/img/illustrations/profiles/profile-4.png"></div>
+                                            Sonya Frost
+                                        </div>
+                                    </td>
+                                    <td>sfrost@email.com</td>
+                                    <td>Registered</td>
+                                    <td><span class="badge bg-yellow-soft text-yellow">Customer</span></td>
+                                    <td>20 Jun 2021</td>
+                                    <td>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark me-2" href="user-management-edit-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                        <a class="btn btn-datatable btn-icon btn-transparent-dark" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

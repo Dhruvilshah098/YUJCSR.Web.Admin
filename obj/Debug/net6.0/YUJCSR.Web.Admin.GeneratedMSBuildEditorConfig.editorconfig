@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\shahn\OneDrive\Desktop\YUJCSR.Web.CSO
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/shahn/OneDrive/Desktop/YUJCSR.Web.CSO/Views/Company/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shahn/OneDrive/Desktop/YUJCSR.Web.CSO/Views/CSO/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1NPXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/shahn/OneDrive/Desktop/YUJCSR.Web.CSO/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -88,6 +96,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/shahn/OneDrive/Desktop/YUJCSR.Web.CSO/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shahn/OneDrive/Desktop/YUJCSR.Web.CSO/Views/User/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/shahn/OneDrive/Desktop/YUJCSR.Web.CSO/Views/_ViewImports.cshtml]
